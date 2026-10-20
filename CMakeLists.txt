@@ -52,3 +52,6 @@ if (BUILD_TESTING)
     target_compile_options(test_integration PRIVATE -UNDEBUG)
     add_test(NAME integration COMMAND test_integration)
 endif()
+# ---- Пример по варианту ----
+add_executable(variant_28 examples/variant_28.cpp)
+target_link_libraries(variant_28 PRIVATE arraylib)
